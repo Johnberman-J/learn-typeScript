@@ -72,3 +72,14 @@ var johnberman: Developer = { // johnberman은 name, age, language 3가지 속�
     age: 19,
     language: 'NodeJS',
 }
+
+interface personAge {
+    age: number,
+}
+
+function printAge(obj: personAge) {
+    console.log(obj.age)
+}
+
+let person = { name: "jake", age: 28}
+printAge(person)
